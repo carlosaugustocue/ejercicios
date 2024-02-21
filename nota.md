@@ -9,3 +9,13 @@ git push -u origin main
 git remote add origin https://github.com/carlosaugustocue/ejercicios.git
 git branch -M main
 git push -u origin main
+
+
+git remote show origin
+
+git remote remove origin
+git remote add origin https://github.com/carlosaugustocue/ejercicios.git
+
+https://github.com/carlosaugustocue/ejercicios.git
+
+# Quitar la configuracion de las cedenciales en windows
