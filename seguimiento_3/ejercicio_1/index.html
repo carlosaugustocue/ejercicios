@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cotizador de Lavandería</title>
+  <script src="cotizador.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1>Cotizador de Servicios de Lavandería</h1>
+    <div class="row">
+      <div class="col">
+        <form id="cotizadorForm">
+          <label class="form-label" for="tipoServicio">Seleccione el tipo de servicio:</label>
+          <select class="form-select" id="tipoServicio" name="tipoServicio">
+            <option value="basico">Lavado básico - $2000 por pieza</option>
+            <option value="premium">
+              Lavado premium (incluye secado y planchado) - $4000 por pieza
+            </option>
+          </select>
+          <br />
+          <label class="form-label" for="cantidadPiezas">Cantidad de piezas de ropa:</label>
+          <input class="form-control" type="number" id="cantidadPiezas" name="cantidadPiezas" min="1" max="20" />
+          <br />
+          <input class="btn btn-primary mb-3" type="submit" value="Calcular Costo" />
+        </form>
+      </div>
+      <div class="col">
+        <div>
+          <h1><span class="badge bg-success" id="resultado"></span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
