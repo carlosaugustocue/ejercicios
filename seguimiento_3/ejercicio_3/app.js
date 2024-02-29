@@ -6,6 +6,8 @@ function calculateTotal() {
     const quantity = parseInt(document.getElementById('quantity').value);
     let totalAmount = prices[model] * quantity;
 
+    // console.log(prices['classic']);
+
     // Validación de la talla
     if (size < 35 || size > 44) {
         alert('La talla seleccionada está fuera del rango permitido.');
@@ -14,7 +16,7 @@ function calculateTotal() {
 
     // Aplicación del descuento
     if (quantity >= 3) {
-        totalAmount *= 0.9; // 10% de descuento
+        totalAmount *= 0.9; //10% de descuento
     }
 
     document.getElementById('result').innerHTML = `El total a pagar es de ${totalAmount.toLocaleString('es-CO', {style: 'currency', currency: 'COP'})}.`;
