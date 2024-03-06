@@ -7,7 +7,6 @@ function calculatePrice() {
     const hookEnd = document.getElementById('hookEnd').checked;
     const quantity = parseInt(document.getElementById('quantity').value);
     let totalAmount;
-
     
     if (isNaN(quantity)) {
         alert('La cantidad ingresada no es válida.');

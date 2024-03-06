@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Venta de Boletas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema de Venta de Boletas para Concierto</h2>
+        <form id="ticketForm">
+            <div class="form-group">
+                <label for="location">Localidad:</label>
+                <select class="form-control" id="location">
+                    <option value="General">General - $50,000</option>
+                    <option value="Preferencial">Preferencial - $150,000</option>
+                    <option value="VIP">VIP - $300,000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Cantidad de boletas (máximo 5):</label>
+                <input type="number" class="form-control" id="quantity" min="1" max="5" value="1">
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Forma de pago:</label>
+                <select class="form-control" id="paymentMethod">
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta">Tarjeta de Crédito</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateTotal()">Calcular Total</button>
+        </form>
+        <div id="totalCost" class="mt-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="ticketSystem.js"></script> <!-- Archivo JavaScript que crearemos después -->
+</body>
+</html>

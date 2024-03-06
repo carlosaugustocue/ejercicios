@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('cotizadorForm');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-
+        console.log(event);
         const tipoServicio = document.getElementById('tipoServicio').value;
         const cantidadPiezas = parseInt(document.getElementById('cantidadPiezas').value);
         const resultadoDiv = document.getElementById('resultado');
