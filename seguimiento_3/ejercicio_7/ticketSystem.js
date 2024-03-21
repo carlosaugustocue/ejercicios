@@ -25,4 +25,7 @@ function calculateTotal() {
         <p>Total a pagar: $${total.toLocaleString()}</p>
     `;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a09b524e6145c697abac0b8a9464259d9ed498c8
